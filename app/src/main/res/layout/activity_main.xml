@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg3"
+    tools:context="com.example.user.myapplication.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="@drawable/textview22">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="245dp"
+                android:background="@drawable/mainicon2"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/autoViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <Button
+                android:id="@+id/btn_Lic"
+                android:layout_width="180dp"
+                android:layout_height="140dp"
+                android:background="@drawable/aaa" />
+
+            <Button
+                android:id="@+id/btn_Video"
+                android:layout_width="180dp"
+                android:layout_height="140dp"
+                android:background="@drawable/ccc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_Emp"
+                android:layout_width="180dp"
+                android:layout_height="140dp"
+                android:background="@drawable/ddd" />
+
+            <Button
+                android:id="@+id/btn_Con"
+                android:layout_width="180dp"
+                android:layout_height="140dp"
+                android:background="@drawable/bbb" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation"
+        android:background="@color/colorPrimaryDark"/>
+</android.support.constraint.ConstraintLayout>
+

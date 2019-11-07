@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg3"
+    tools:context="com.example.user.myapplication.ContestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/textview22">
+
+            <Button
+                android:id="@+id/pre_con"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="240dp"
+                android:background="@drawable/home" />
+            <Button
+                android:id="@+id/map"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/map1"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest1"
+                        android:background="@drawable/contest1"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest2"
+                        android:background="@drawable/contest2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest3"
+                        android:background="@drawable/contest3"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest4"
+                        android:background="@drawable/contest4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest5"
+                        android:background="@drawable/contest5"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest6"
+                        android:background="@drawable/contest6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest7"
+                        android:background="@drawable/contest7"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest8"
+                        android:background="@drawable/contest8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest9"
+                        android:background="@drawable/contest9"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onButtonClick1"/>
+
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest10"
+                        android:background="@drawable/contest10" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest11"
+                        android:background="@drawable/contest11"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contest12"
+                        android:background="@drawable/contest12" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation"
+        android:background="@color/colorPrimaryDark"/>
+</android.support.constraint.ConstraintLayout>
+
